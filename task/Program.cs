@@ -9,16 +9,16 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → []
 */ 
-string[] array1 = new string[5] {"^.^", "23", "hello", "work", "mirror"};
-string[] array2 = new string[array1.Length];
-void SecondArray(string[] array1, string[] array2)
+string[] arrayOne = new string[5] {"^.^", "23", "hello", "work", "mirror"};
+string[] arrayTwo = new string[arrayOne.Length];
+void SecondArray(string[] arrayOne, string[] arrayTwo)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < arrayOne.Length; i++)
     {
-    if(array1[i].Length <= 3)
+    if(arrayOne[i].Length <= 3)
         {
-        array2[count] = array1[i];
+        arrayTwo[count] = arrayOne[i];
         count++;
         }
     }
@@ -31,5 +31,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
-SecondArray(array1, array2);
-PrintArray(array2);
+SecondArray(arrayOne, arrayTwo);
+PrintArray(arrayTwo);
